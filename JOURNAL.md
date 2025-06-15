@@ -30,3 +30,30 @@ Finally, I tackled the switches, which weren't as important, but since they were
 I quite literally just used the TDD01H0SB1R for both the BOOT switches, and made both of them the same, with just different pins. Heehee! The NRST switch required 4 pins, so I used SKRPANE010. I had to keep in mind that the switches could not be big, as I needed to make this device compact as possible.
 
 Time spent this session: 4 hours.
+
+# June 14th: Finished up the schematic and placed parts in the PCB editor.
+
+Looking at my checklist, I saw that I had some easy parts left to connect. 
+I still had my PWM driver+PWM Power, which was incredibly important for my servos, a couple of connectors for UART, I2C and Timers, and some LEDs for visual feedback. 
+
+The PWM driver was pretty straight forward, and I used I2C for controlling it. PWM power was also in a similar fashion, but without any I2C needed. 
+
+I used the STM32CubeIDE to check what pins were avaliable for my various connectors, and I used the most closest/avaliable ones. 
+
+The LEDs were fun to make, as it was a blast deciding the colors! A simple input to GND connection was all I needed, easy peasy!
+
+Time spent this session: 3 hours.
+
+# June 15th: Finished Design rules and started routing.
+
+Good morning! I woke up with an interesting but important thought. Who should I use to make my PCB. I checked on the parts sourcing portion of the Highway website, and I saw PCBway as the preferred vendor. Thankfully, PCBway has a Kicad file just for design rules, so I just downloaded, and drag and dropped! 
+
+Yesterday's progress was immensely helpful, as I just needed to route everything. I decided to start on the front copper layer, as it would be the biggest routes to tackle. 
+
+I decided to do my copper pours last, so I would have to keep adjusting them for every route I do. 
+
+I used really big traces for all the power, especially the PWM Power driver, and medicore traces for the signals. I had to use alot of vias, since this was a space constrained board, so please excuse the amount of holes on there...
+
+I made plated mounting holes, which added some aesthetics, as well as a way to connect my ground pins without using too much vias/tracks. 
+
+Time spent this session: 6 hours.
