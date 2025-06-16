@@ -57,3 +57,17 @@ I used really big traces for all the power, especially the PWM Power driver, and
 I made plated mounting holes, which added some aesthetics, as well as a way to connect my ground pins without using too much vias/tracks. 
 
 Time spent this session: 6 hours.
+
+# June 16th: Finished routing and did copper pours
+
+So I'm uh, writing this in school, on my final day... 
+
+I finished most of the important routing yesterday, which the was front copper layer. I simply did some basic back copper layer traces, and some signals in between. Thankfully, KiCad has a wonderful automatic copper pour system, so I just drew a box and it automatically cut out copper pours where it was not needed! Just some tidying up, and I was done! 
+
+I also realized that this was useless without a GPS and Telem module, so I decided to make "mini" module for my board. I decided that this would consist of a Neo-m9n and a E220-900T22S. 
+
+The E220-900T22S was a special case, since it used UART instead of SPI for a LoRa connection, which was how my PicoBlade on the main board was set up.
+
+I'll see you guys tommorow!
+
+Time spent this session: 3 hours.
